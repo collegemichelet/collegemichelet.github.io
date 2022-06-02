@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collège Michelet Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/collegemichelet.png" />
+    <script type="text/javascript" src="javascript/recherche.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="topbar">
+        <div class="logo">
+            <a href="index.html" class="logo-image"><img src="img/collegemichelet.png" alt=""></a>
+        </div>
+        <div class="rechercher" id="rechercher">
+            <a><img class="rechercher" src="img/rechercher.png" alt=""></a>
+            <input id="searchbar" onkeyup="search_lien()" type="text"name="search" placeholder="Rechercher" change="">
+            <ol id="list"></ol>
+                <script>
+                    $(function(){
+                    $("#list").load("./liste.html"); 
+                    });
+                </script> 
+        </div>
+        <nav>
+            <a href="index.html" class="">Accueil</a>
+            <a href="actualites.html" class="active">Actualités</a>
+            <a href="login.html">Se connecter</a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="contener_slideshow">
+            <h1 class="titre">Sorties et Voyages</h1>
+            <div class="contener_slide">
+            <div class="slid_1"><img src="img/fresque.png"></div>
+            <div class="slid_2"><img src="img/podium.png"></div>
+            <div class="slid_3"><img src="img/tournoiechec.png"></div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="actualites.html"><div class="box actualite">
+                <h2>Le voyage en Espagne</h2>
+                <p class="date">18 mai 2022</p>
+                <p class="resume">LEs élèves de LV2 Espagnol font actuellement un Voyage Scolaire en Espagne. Après une quinzaine d'heure de voyage, les voila enfin arrivés. SUivez les dernières actualités...</p>
+                <img src="img/actualites.png" alt="">
+            </div></a>
+            <a href="actualites.html"><div class="box actualite">
+                <h2>Le voyage en Angleterre</h2>
+                <p class="date">31 mars 2019</p>
+                <p class="resume">Durant le deuxième trimestre les élèves de quatrième ont préparé le salon Polar Lens. A cette occasion ils ont pu rencontrer le célèbre ancien espion et auteur Olivier Maes, puis se glisser dans la peau de faussaires au cœur d’un trafic de répliques du célèbre scribe accroupi arrivé au Louvre Lens sous ...</p>
+                <img src="img/actualites.png" alt="">
+            </div></a>
+            <a href="actualites.html"><div class="box actualite">
+                <h2>LE voyage au marché de Noel de Aix LA Chapelle</h2>
+                <p class="date">10 décembre 2018</p>
+                <p class="resume">Après leur belle qualification départementale en janvier dernier, les 10 élèves représentant le collège Michelet se sont rendus mercredi 16 mars après-midi au tournoi régional, qui opposait 10 collèges du Nord Pas-de-Calais. Le niveau de la compétition était à la hauteur de l’enjeu, à savoir une qualification ...</p>
+                <img src="img/actualites.png" alt="">
+            </div></a>
+        </div>
+
+
+    </main>
+    <footer class="footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#85b439" fill-opacity="1" d="M0,128L21.8,128C43.6,128,87,128,131,138.7C174.5,149,218,171,262,170.7C305.5,171,349,149,393,133.3C436.4,117,480,107,524,90.7C567.3,75,611,53,655,58.7C698.2,64,742,96,785,101.3C829.1,107,873,85,916,69.3C960,53,1004,43,1047,53.3C1090.9,64,1135,96,1178,133.3C1221.8,171,1265,213,1309,218.7C1352.7,224,1396,192,1418,176L1440,160L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path>
+          </svg>
+        <div class="green">
+        ENT Collège Michelet Lens ©2022 <br>
+        <a href="index.html" class="">LE COLLEGE</a> <br>
+        <a href="index.html" class="">CONTACT</a> <br>
+        <a href="index.html" class="">INFORMATIONS UTILES</a> <br>
+        <a href="index.html" class="">MENTIONS LEGALES</a> <br>
+        </div>
+    </footer>
+</body>
+</html>
