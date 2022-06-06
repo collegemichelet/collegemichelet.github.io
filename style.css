@@ -253,6 +253,10 @@ body, html {
     font-weight:400;
 }
 
+.container a.blue{
+    color:blue;
+}
+
 .box {
 	display: block;
     float: left;
